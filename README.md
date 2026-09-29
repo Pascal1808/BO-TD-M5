@@ -10,7 +10,7 @@
 ## 2. Wat maakt jouw tower defense uniek
 ### Wat mijn spel anders maakt als andere Tower Defense spelen is dat het erg simpel is
 ## 3. Schets van je level en UI
- 
+ ![png](BO-TD-Levelschets.png)
 ### Blauw: torens
 ### Zwart: Enemies
 ### De drie streepjes is het pauze menu
