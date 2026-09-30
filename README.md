@@ -39,7 +39,7 @@
 ### •	Oplossing: start geld geven en de enemies geld waard maken
 ### •	Probleem 3: de startwaveknop werkt niet 
 ### •	Impact: de speler kan maar 1 wave spelen
-### •	Oplossing: andere waves aan
+### •	Oplossing: andere waves aanmaken
 ## 9. Planning per sprint en mechanics
 ### Sprint 1 mechanics: enemies die waypoints volgen
 ### Sprint 2 mechanics: torens die schieten en upgradebaar zijn
@@ -50,17 +50,11 @@
 ### Mijn inspiratie is van de tutorial video
 
 ## 11. Technisch ontwerp mini
-### Lees dit korte voorbeeld en vul daarna jouw eigen keuzes in.
-### Voorbeeld ingevuld bij 11.1 Vijandbeweging over het pad
-### •	Keuze: Vijanden volgen punten A, B, C en daarna de goal.
-### •	Risico: Een vijand loopt een punt voorbij of blijft hangen.
-### •	Oplossing: Als de vijand dichtbij genoeg is kiest hij het volgende punt. Bij de goal gaat één leven omlaag en verdwijnt de vijand.
-### •	Acceptatie: Tien vijanden lopen van start naar de goal zonder vastlopers en verbruiken elk één leven. Alle tien vijanden bereiken achtereenvolgens elk waypoint binnen één seconde na elkaar.
 ## 11.1 Vijandbeweging over het pad
 ### •	Keuze: vijanden volgen waypoints naar het doel
-### •	Risico: 
-### •	Oplossing:
-### •	Acceptatie:
+### •	Risico: de enemies kunnen verkeerd lopen
+### •	Oplossing: elke keer als ze een waypoint voorbij zijn zoeken ze naar de volgende die een nummer hoger is
+### •	Acceptatie: de enenmies lopen van punt naar punt
 ## 11.2 Doel kiezen en schieten
 ### •	Keuze: het doel is om om de enemy te schieten die de meeste progressie heeft gemaakt
 ### •	Risico: het kan lastigere enemies overslaan 
@@ -68,16 +62,16 @@
 ### •	Acceptatie: de sterkere enemies lopen langzamer dus ze zijn makelijker te raken
 ## 11.3 Waves en spawnen
 ### •	Keuze: naar mate de het spel vordert komen er meer enemies per wave
-### •	Risico: 
-### •	Oplossing:
-### •	Acceptatie:
+### •	Risico: je kunt slechter verdedigen tegen de enemies
+### •	Oplossing: de lastigere enemies zijn langzamer 
+### •	Acceptatie: de enemies die minder leven hebbn schiet je eerder dood
 ## 11.4 Economie en levens
 ### •	Keuze: je hebt 100 levens dus je kun 100 keert geraakt worden door jeff’s
 ### •	Risico: je kunt makkelijk verdedigen
-### •	Oplossing: 
-### •	Acceptatie:
+### •	Oplossing: de bob's hebben meer leven
+### •	Acceptatie: er zijn lastigere enemies waar door het lastiger word
 ## 11.5 UI basis
 ### •	Keuze: je hebt een go-button om het level te starten
-### •	Risico:
-### •	Oplossing:
-### •	Acceptatie:
+### •	Risico: je kunt heel snel achter elkaar waves laten komen
+### •	Oplossing: een cooldown button
+### •	Acceptatie: je moet eerst wachten tot elke enemy van een wave dood is om een andere wav te starten
