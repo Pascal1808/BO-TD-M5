@@ -4,11 +4,14 @@
 ## Naam: Pascal
 ## Klas: SD2A
 ## Datum: 23/09/2026
+
 ## 1. Titel en elevator pitch
 ### Titel: tower shoot
+
 ### Mijn spel is tower shoot wat het leuk maakt om te spelen is dat het simpel is om te begrijpen
 ## 2. Wat maakt jouw tower defense uniek
 ### Wat mijn spel anders maakt als andere Tower Defense spelen is dat het erg simpel is
+
 ## 3. Schets van je level en UI
  ![png](BO-TD-Levelschets.png)
 ### Blauw: torens
@@ -16,20 +19,25 @@
 ### De drie streepjes is het pauze menu
 ### De pijlen zijn de richting die de enemies volgen
 ## 4. Torens
+
 ### 1.	Archer, medium bereik, 5 schade
 ### 2.	Wizard, lang bereik, 3 schade
+
 ## 5. Vijanden
 ### 1.	Vijand 1 Jeff, normale snelheid, 5 levens, niets speciaals
 ### 2.	Vijand 2 Bob, langzamer dan Jeff, 7 levens, 
 #### Eventuele extra vijanden:
 #### Big jos is een boss fight en heeft een paar jeff’s bij zich
+
 ## 6. Gameplay loop
 ### 1.	Speler plaatst toren 
 ### 2.	Speler start wave
 ### 3.	Speler verzamelt coins
 ### 4.	Speler upgrade toren
+
 ## 7. Progressie
-### Er kommen steeds meer enemies en sneller achter elkaar
+### Er kommen steeds meer enemies en sneller achter elkaar per wave die voorbij is gegaan
+
 ## 8. Risico’s en oplossingen volgens PIO
 ### •	Probleem 1: speler kan geen toren plaatsen
 ### •	Impact: je kunt niet verdedigen
@@ -46,6 +54,7 @@
 ### Sprint 3 mechanics: een start Wave knop en andere UI
 ### Sprint 4 mechanics:
 ### Sprint 5 mechanics:
+
 ## 10. Inspiratie
 ### Mijn inspiratie is van de tutorial video
 
@@ -74,4 +83,4 @@
 ### •	Keuze: je hebt een go-button om het level te starten
 ### •	Risico: je kunt heel snel achter elkaar waves laten komen
 ### •	Oplossing: een cooldown button
-### •	Acceptatie: je moet eerst wachten tot elke enemy van een wave dood is om een andere wav te starten
+### •	Acceptatie: je moet eerst wachten tot elke enemy van een wave dood is om een andere wave te starten
