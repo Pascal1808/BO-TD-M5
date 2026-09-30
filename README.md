@@ -1,6 +1,6 @@
 # BO-TD-M5
 
-#  Sprint 0 - Game Design Document: Tower Defense
+# Game Design Document: Tower Defense
 ## Naam: Pascal
 ## Klas: SD2A
 ## Datum: 23/09/2026
