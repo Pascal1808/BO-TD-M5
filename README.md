@@ -31,15 +31,15 @@
 ## 7. Progressie
 ### Er kommen steeds meer enemies en sneller achter elkaar
 ## 8. Risico’s en oplossingen volgens PIO
-### •	Probleem 1:
-### •	Impact:
-### •	Oplossing:
-### •	Probleem 2:
-### •	Impact:
-### •	Oplossing:
-### •	Probleem 3:
-### •	Impact:
-### •	Oplossing:
+### •	Probleem 1: speler kan geen toren plaatsen
+### •	Impact: je kunt niet verdedigen
+### •	Oplossing: de koop knoop fixen
+### •	Probleem 2: speler kan geen in-game geld krijgen
+### •	Impact: kan geen torens kopen
+### •	Oplossing: start geld geven en de enemies geld waard maken
+### •	Probleem 3: de startwaveknop werkt niet 
+### •	Impact: de speler kan maar 1 wave spelen
+### •	Oplossing: andere waves aan
 ## 9. Planning per sprint en mechanics
 ### Sprint 1 mechanics: enemies die waypoints volgen
 ### Sprint 2 mechanics: torens die schieten en upgradebaar zijn
@@ -64,17 +64,17 @@
 ## 11.2 Doel kiezen en schieten
 ### •	Keuze: het doel is om om de enemy te schieten die de meeste progressie heeft gemaakt
 ### •	Risico: het kan lastigere enemies overslaan 
-### •	Oplossing: de lastigere enemies lopen langzemer
-### •	Acceptatie:
+### •	Oplossing: de lastigere enemies lopen langzamer
+### •	Acceptatie: de sterkere enemies lopen langzamer dus ze zijn makelijker te raken
 ## 11.3 Waves en spawnen
 ### •	Keuze: naar mate de het spel vordert komen er meer enemies per wave
-### •	Risico:
+### •	Risico: 
 ### •	Oplossing:
 ### •	Acceptatie:
 ## 11.4 Economie en levens
 ### •	Keuze: je hebt 100 levens dus je kun 100 keert geraakt worden door jeff’s
-### •	Risico:
-### •	Oplossing:
+### •	Risico: je kunt makkelijk verdedigen
+### •	Oplossing: 
 ### •	Acceptatie:
 ## 11.5 UI basis
 ### •	Keuze: je hebt een go-button om het level te starten
