@@ -3,12 +3,15 @@ using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
+    public int penis = 12;
     public static AudioManager Instance;
 
     private void Awake()
     {
         Instance = this;
     }
+
+    
 
     public void PlaySFX(AudioClip clip, float volume = 1f)
     {
