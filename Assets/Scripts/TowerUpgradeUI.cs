@@ -10,7 +10,7 @@ public class TowerUpgradeUI : MonoBehaviour
     public TextMeshProUGUI priceText;
 
     private bool justOpened = true;
-
+    
     private void Awake()
     {
         upgradeButton.onClick.AddListener(TryUpgrade);
@@ -18,7 +18,7 @@ public class TowerUpgradeUI : MonoBehaviour
 
     private void TryUpgrade()
     {
-        if(CoinManager.instance.coins < tower.upgradeStages[tower.upgradeStage].price) return;
+        if(CoinManager.instance.Coins < tower.upgradeStages[tower.UpgradeStage].Price) return;
 
         tower.Upgrade();
 
@@ -42,7 +42,7 @@ public class TowerUpgradeUI : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (tower.upgradeStage >= tower.upgradeStages.Length)
+        if (tower.UpgradeStage >= tower.upgradeStages.Length)
         {
             Destroy(gameObject);
         }

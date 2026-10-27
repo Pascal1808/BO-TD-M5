@@ -56,7 +56,7 @@
 ### Sprint 5 mechanics:
 
 ## 10. Inspiratie
-### Mijn inspiratie is van de tutorial video
+### Mijn Inspiratie is 
 
 ## 11. Technisch ontwerp mini
 ## 11.1 Vijandbeweging over het pad

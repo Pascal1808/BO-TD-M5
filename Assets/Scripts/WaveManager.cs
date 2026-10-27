@@ -7,9 +7,25 @@ using TMPro;
 
 public class WaveData
 {
-    public float Duration = 10f; 
-    public int easyEnemies = 5;
-    public int hardEnemies = 2;
+    [SerializeField]private float duration = 10f; 
+    [SerializeField]private int easyEnemies = 5;
+    [SerializeField]private int hardEnemies = 2;
+
+    public float Duration
+    {
+        get{return duration;}
+        set{duration = value;}
+    }
+    public int EasyEnemies
+    {
+        get{return easyEnemies;}
+        set{easyEnemies = value;}
+    }
+    public int HardEnemies
+    {
+        get{return hardEnemies;}
+        set{hardEnemies = value;}
+    }
 }
 
 public class WaveManager : MonoBehaviour
@@ -39,23 +55,23 @@ public class WaveManager : MonoBehaviour
         StartCoroutine(RunWave());
     }
 
-    IEnumerator RunWave()
+    public IEnumerator RunWave()
     {
         waveRunning = true;
         startWaveButton.interactable = false;
 
         WaveData wave = waves[currentWaveIndex];
 
-        for (int i = 0; i < wave.easyEnemies; i++)
+        for (int i = 0; i < wave.EasyEnemies; i++)
         {
             SpawnEnemy(easyEnemyPrefab);
-            yield return new WaitForSeconds(wave.Duration / 3 / wave.easyEnemies);
+            yield return new WaitForSeconds(wave.Duration / 3 / wave.EasyEnemies);
         }
 
-         for (int i = 0; i < wave.hardEnemies; i++)
+         for (int i = 0; i < wave.HardEnemies; i++)
         {
             SpawnEnemy(hardEnemyPrefab);
-            yield return new WaitForSeconds(wave.Duration / 3 / wave.hardEnemies);
+            yield return new WaitForSeconds(wave.Duration / 3 / wave.HardEnemies);
         }
 
         yield return new WaitForSeconds(wave.Duration / 3);

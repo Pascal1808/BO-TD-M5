@@ -5,8 +5,14 @@ public class CoinManager : MonoBehaviour
 {
     public static CoinManager instance;
 
-    public int coins;
+    [SerializeField]private int coins;
     public TextMeshProUGUI coinText;
+
+    public int Coins
+    {
+        get{return coins; }
+        set{coins = value;}
+    }
 
     private void Awake()
     {

@@ -2,11 +2,23 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 2f;
-    public int health = 1;
+    private float speed = 2f;
+    [SerializeField] private int health = 1;
+    [SerializeField] private int damage;
     public Transform[] waypoints;     
 
-    public int currentWayPointIndex = 0;
+    private int currentWayPointIndex = 0;
+    public int Health
+    {
+        get
+        {
+            return health;
+        }
+        set
+        {
+            health = value;
+        }
+    }
     void Update()
     {
         if(waypoints == null || waypoints.Length == 0)return;
@@ -22,7 +34,8 @@ public class Enemy : MonoBehaviour
 
             if(currentWayPointIndex >= waypoints.Length)
             {
-                HealthManager.instance.UpdateHealth(-1); // Decrease health by 1 when enemy reaches the end
+                HealthManager.instance.UpdateHealth(damage); // Decrease health by 1 when enemy reaches the end
+                CoinManager.instance.UpdateCoins(-2);
                 Destroy(gameObject); // Enemy reached the end
             }
         }

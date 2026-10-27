@@ -50,6 +50,7 @@ public class TowerPlacer : MonoBehaviour
 
     void HandlePlacementClick()
     {
+        
         if(!Input.GetMouseButtonDown(0))return;
         if(TowerSelectionUI.SelectedTowerPrefab == null) return;
 
@@ -66,7 +67,7 @@ public class TowerPlacer : MonoBehaviour
 
         Instantiate(TowerSelectionUI.SelectedTowerPrefab, ghostInstance.transform.position, Quaternion.identity);
 
-        CoinManager.instance.UpdateCoins(-TowerSelectionUI.SelectedTowerPrefab.GetComponent<Tower>().towerPrice); // Deduct the tower price from coins
+        CoinManager.instance.UpdateCoins(-TowerSelectionUI.SelectedTowerPrefab.GetComponent<Tower>().TowerPrice); // Deduct the tower price from coins
 
         TowerSelectionUI.SelectedTowerPrefab = null; // Deselect the tower after placement
 

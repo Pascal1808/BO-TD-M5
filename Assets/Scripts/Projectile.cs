@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 8f;
+    private float speed = 8f;
     public Transform target;
     public GameObject hitPS;
 
@@ -24,8 +24,8 @@ public class Projectile : MonoBehaviour
         if(Vector3.Distance(transform.position, target.position) < 0.1f)
         {
             Enemy e = target.GetComponent<Enemy>();
-            e.health -= 1;
-            if(e.health <= 0)
+            e.Health -= 1;
+            if(e.Health <= 0)
             {
                 CoinManager.instance.UpdateCoins(1); // Add 1 coin for each enemy killed
                 Destroy(target.gameObject);

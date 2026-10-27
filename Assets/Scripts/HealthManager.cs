@@ -1,12 +1,12 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
     public static HealthManager instance;
 
-    public int health = 100;
+    private int health = 100;
+    public GameObject container;
     public TextMeshProUGUI healthText;
 
     private void Awake()
@@ -22,7 +22,9 @@ public class HealthManager : MonoBehaviour
 
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            container.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
+
 }

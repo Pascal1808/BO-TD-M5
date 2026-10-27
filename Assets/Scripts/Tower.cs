@@ -1,33 +1,57 @@
 using UnityEngine;
 
 [System.Serializable]
-
 public class TowerUpgradeStage
 {
-    public float range;
-    public float fireRate;
+    [SerializeField]private float range;
+    [SerializeField]private float fireRate;
     public Sprite sprite;
-    public int price;
+    [SerializeField]private int price;
+    public float Range
+    {
+        get{return range;}
+        set{range = value;}
+    }
+    public float FireRate
+    {
+        get{return fireRate;}
+        set{fireRate = value;}
+    }
+    public int Price
+    {
+        get{return price;}
+        set{price = value;}    
+    }
 }
 
 public class Tower : MonoBehaviour
 {
-    public float range = 5f;
-    public float fireRate = 1f;
+    private float range = 5f;
+    private float fireRate = 1f;
     public GameObject projectilePrefab;
     public Transform firePoint;
 
     public TowerUpgradeStage[] upgradeStages;
-    public int upgradeStage = 0;
+    private int upgradeStage = 0;
     private SpriteRenderer sr;
     public GameObject towerUpgradeUIPrefab;
     private GameObject currentUI;
 
     public GameObject cloudPS;
 
-    public int towerPrice = 1;
+    [SerializeField] private int towerPrice = 1;
 
     private float fireCooldown = 0f;
+    public int UpgradeStage
+    {
+        get{return upgradeStage;}
+        set{upgradeStage = value;}
+    }
+    public int TowerPrice
+    {
+        get{return towerPrice;}
+        set{towerPrice = value;}
+    }
 
     private void Awake()
     {
@@ -78,10 +102,10 @@ public class Tower : MonoBehaviour
     {
         TowerUpgradeStage currentUpgradeStage = upgradeStages[upgradeStage];
 
-        range = currentUpgradeStage.range;
-        fireRate = currentUpgradeStage.fireRate;
+        range = currentUpgradeStage.Range;
+        fireRate = currentUpgradeStage.FireRate;
         sr.sprite = currentUpgradeStage.sprite;
-        CoinManager.instance.UpdateCoins(-currentUpgradeStage.price);
+        CoinManager.instance.UpdateCoins(-currentUpgradeStage.Price);
         upgradeStage += 1;
         Instantiate(cloudPS, transform.position, Quaternion.identity);
 
@@ -100,6 +124,6 @@ public class Tower : MonoBehaviour
         currentUI.transform.position = Input.mousePosition + new Vector3(50, -50);
 
         if (upgradeStage >= upgradeStages.Length)return;
-        currentUpgradeUI.priceText.text = upgradeStages[upgradeStage].price.ToString();        
+        currentUpgradeUI.priceText.text = upgradeStages[upgradeStage].Price.ToString();        
     }
 }
