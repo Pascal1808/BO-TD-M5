@@ -106,8 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d9e98ffdc172e4bb46dbc95d613769, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tower
-  range: 4
-  fireRate: 1
   projectilePrefab: {fileID: 3864657200710989056, guid: 6aa74351481712f4bbdc61554ea039c4, type: 3}
   firePoint: {fileID: 265686035394902707}
   upgradeStages:
@@ -119,27 +117,6 @@ MonoBehaviour:
     fireRate: 3
     sprite: {fileID: 21300000, guid: 49763f91ff9a68644897226748ef2f76, type: 3}
     price: 25
-  - range: 10
-    fireRate: 3
-    sprite: {fileID: 21300000, guid: 49763f91ff9a68644897226748ef2f76, type: 3}
-    price: 1
-  - range: 10
-    fireRate: 3
-    sprite: {fileID: 21300000, guid: 49763f91ff9a68644897226748ef2f76, type: 3}
-    price: 1
-  - range: 10
-    fireRate: 3
-    sprite: {fileID: 21300000, guid: 49763f91ff9a68644897226748ef2f76, type: 3}
-    price: 1
-  - range: 10
-    fireRate: 3
-    sprite: {fileID: 21300000, guid: 49763f91ff9a68644897226748ef2f76, type: 3}
-    price: 1
-  - range: 100
-    fireRate: 300
-    sprite: {fileID: 21300000, guid: 49763f91ff9a68644897226748ef2f76, type: 3}
-    price: 1
-  upgradeStage: 0
   towerUpgradeUIPrefab: {fileID: 7696100002009490284, guid: 16efa0f7ebbf4dd4f97677aa47aaa7ed, type: 3}
   cloudPS: {fileID: 5314989184997442871, guid: f0232e76e583819408e0ca6d0f72d4fb, type: 3}
   towerPrice: 5

@@ -78,8 +78,9 @@ public class WaveManager : MonoBehaviour
 
         waveRunning = false;
         startWaveButton.interactable = true;
-        currentWaveIndex++;
+        currentWaveIndex += 1;
         waveText.text = (currentWaveIndex + 1).ToString();
+        UpdateScoreText();
     }
 
     void SpawnEnemy(GameObject Prefab)
@@ -88,5 +89,10 @@ public class WaveManager : MonoBehaviour
         Enemy enemy = e.GetComponent<Enemy>();
         enemy.waypoints = wayPoints;
     }
-    
+
+    void UpdateScoreText()
+    {
+        waveText.text = "Wave: " + currentWaveIndex;
+    }
+
 }
