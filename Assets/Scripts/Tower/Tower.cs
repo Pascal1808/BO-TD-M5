@@ -45,12 +45,10 @@ public class Tower : MonoBehaviour
     public int UpgradeStage
     {
         get{return upgradeStage;}
-        set{upgradeStage = value;}
     }
     public int TowerPrice
     {
         get{return towerPrice;}
-        set{towerPrice = value;}
     }
 
     private void Awake()

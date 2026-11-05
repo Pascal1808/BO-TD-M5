@@ -10,14 +10,8 @@ public class Enemy : MonoBehaviour
     private int currentWayPointIndex = 0;
     public int Health
     {
-        get
-        {
-            return health;
-        }
-        set
-        {
-            health = value;
-        }
+        get{ return health;}
+        set{health = value;}
     }
     void Update()
     {
