@@ -11,7 +11,6 @@ public class CoinManager : MonoBehaviour
     public int Coins
     {
         get{return coins; }
-        set{coins = value;}
     }
 
     private void Awake()

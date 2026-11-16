@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private float speed = 2f;
+    [SerializeField]private float speed = 2f;
     [SerializeField] private int health = 1;
     [SerializeField] private int damage;
     public Transform[] waypoints;     
